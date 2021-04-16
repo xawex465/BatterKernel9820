@@ -332,6 +332,18 @@ config ARCH_EXYNOS9
 	help
 	  Samsung EXYNOS9 (Meercat/Ananke) SoC based systems
 
+config 9820_DTS_BEYOND2
+	bool "Beyond2lte DTS"
+	depends on SOC_EXYNOS9820
+
+config 9820_DTS_BEYOND1
+	bool "Beyond1lte DTS"
+	depends on SOC_EXYNOS9820
+
+config 9820_DTS_BEYOND0
+	bool "Beyond0lte DTS"
+	depends on SOC_EXYNOS9820
+
 config ANDROID_SYSTEM_AS_ROOT
 	bool "Enable Android System As Root"
 	default n
